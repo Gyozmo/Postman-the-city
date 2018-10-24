@@ -12,9 +12,16 @@ city.init(streets_number, houses_number, residents_number, letters_number)
 
 
 const report = () => {
-Generate.report()
-city.init(streets_number, houses_number, residents_number, letters_number)
+    Generate.report()
+    city.init(streets_number, houses_number, residents_number, letters_number)
 }
 
 // Déclenchement du facteur
 
+const getMail = () => {
+    city.postman.get_mail_from_postoffice()
+}
+
+const startTour = () => {
+    city.postman.start_tour()
+}
